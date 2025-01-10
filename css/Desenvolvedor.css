@@ -1,0 +1,139 @@
+.ground {
+    background-color: rgb(255, 255, 255);
+    background-image: url(../Img/BIOSPHERA.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    background-attachment: scroll;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    background: center;
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 20px;
+    margin: 0;
+    position: absolute;
+    top: 1vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-attachment: fixed;
+}
+
+.opcoes {
+    width: 20vw;
+    max-width: 200px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #cccccc88;
+    border-radius: 20px;
+    background-color: #f8f8f86e;
+    font-size: 16px;
+    position: absolute;
+    top: 21px;
+    left: 83%;
+    transform: translateX(-50%);
+    background-attachment: fixed;
+    margin-top: 70px;
+}
+
+@media (max-width: 717px) {
+        .opcoes {
+            margin-top: 110px;
+        }
+}
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    height: 60vh;  /* Altura do slider */
+    margin: 200px auto;  /* Aumentei a margem superior para 200px para mover o slider mais para baixo */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;  /* Garante que o slider fique acima do fundo */
+}
+
+/* Definições do slider */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;  /* Garantir que o slide ocupe a altura do container */
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Imagens de fundo do slider */
+.slide-1 {
+    background-image: url(../Img/TI.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.slide-2 {
+    background-image: url('dev2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.slide-3 {
+    background-image: url('dev3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+/* Estilo da informação sobre o desenvolvedor */
+.developer-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Estilo dos botões de navegação (esquerda e direita) */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 30px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

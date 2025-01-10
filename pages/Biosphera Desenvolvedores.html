@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biosphera Tecnologia Nuvem FCO-DOCS</title>
+    <link href="../css/Desenvolvedor.css" rel="stylesheet" type="text/css" />
+    <script src="../components/Desenvolvedor.js"></script>
+</head>
+<body class="ground">
+    <div class="titulo">
+    <h1>
+                             <center>TECNOLOGIA-BIOSPHERA-SAUDE<center>
+    
+  </h1>
+</div>
+ <h1></h1>
+<h2></h2> 
+
+<div id="categorias">               
+    <select class="opcoes" onchange="handleOptionChange(this)">
+        <option value="desenvolvedores">
+            Desenvolvedores
+        </option>
+        <option value="suporte">
+            Suporte
+        </option>
+        <option value="inicial">
+            Inicial
+        </option> 
+        <option value="informacoes">
+            Informações
+        </option>
+        <option value="downloads">
+            Downloads
+        </option>
+        <option value="integraçoes">
+            Integraçoes
+        </option>
+    </select>
+</div>
+
+<div class="slider-container">
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <div class="slider" id="slider">
+        <div class="slide slide-1">
+            <div class="developer-info">
+                <h3>Desenvolvedores</h3>
+                <p>Equipe de TI</p>
+            </div>
+        </div>
+        <div class="slide slide-2">
+            <div class="developer-info">
+                <h3>Desenvolvedor</h3>
+                <p>Função: ...</p>
+            </div>
+        </div>
+        <div class="slide slide-3">
+            <div class="developer-info">
+                <h3>Desenvolvedor</h3>
+                <p>Função: ...</p>
+            </div>
+        </div>
+    </div>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+</body>
+
+</html>

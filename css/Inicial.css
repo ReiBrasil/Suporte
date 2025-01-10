@@ -1,0 +1,131 @@
+.ground {
+    background-color: rgb(255, 255, 255);
+    background-image: url(../Img/BIOSPHERA.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    background-attachment: scroll;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    background: center;
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 20px;
+    margin: 0;
+    position: absolute;
+    top: 1vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-attachment: fixed;
+}
+
+.opcoes {
+    width: 20vw;
+    max-width: 200px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #cccccc88;
+    border-radius: 20px;
+    background-color: #f8f8f86e;
+    font-size: 16px;
+    position: absolute;
+    left: 83%;
+    transform: translateX(-50%);
+    background-attachment: fixed;
+    margin-top: 70px;
+}
+
+@media (max-width: 717px) {
+        .opcoes {
+            margin-top: 110px;
+        }
+}
+
+.sub {
+    flex-direction: column;
+    position: absolute;
+    color: #333;
+    top: 25vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-attachment: fixed;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 80vh; /* Centraliza verticalmente */
+    transform: translateY(39vh);
+}
+
+#info-list {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0;
+    display: flex; /* Flexbox para alinhar as caixas horizontalmente */
+    flex-wrap: wrap; /* Permite que as caixas quebrem para a próxima linha se não houver espaço suficiente */
+    justify-content: center;
+}
+
+.info-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Branco semi-transparente */
+    padding: 20px;
+    margin: 10px; /* Espaçamento entre caixas */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+    text-align: center;
+    width: 300px; /* Largura fixa */
+    transition: transform 0.3s; /* Efeito de transição ao passar o mouse */
+}
+
+
+.info-box:hover {
+    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+}
+
+#butao {
+    background-color: rgba(255, 255, 255, 0.8); /* Branco semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+    text-align: center;
+    width: 300px; /* Largura fixa */
+}
+
+.press {
+    background-color: rgb(0, 86, 167);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.press a {
+    color: white;
+    text-decoration: none;
+}
+
+.press:hover {
+    background-color: #2646ad;
+    transform: scale(1.05);
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}

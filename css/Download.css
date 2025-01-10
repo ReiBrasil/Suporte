@@ -1,0 +1,162 @@
+.ground {
+    background-color: rgb(255, 255, 255);
+    background-image: url(../Img/BIOSPHERA.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    background-attachment: scroll;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 86, 167);
+    background: center;
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 20px;
+    margin: 0;
+    position: absolute;
+    top: 1vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-attachment: fixed;
+}
+
+.opcoes {
+    width: 20vw;
+    max-width: 200px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #cccccc88;
+    border-radius: 20px;
+    background-color: #f8f8f86e;
+    font-size: 16px;
+    position: absolute;
+    left: 83%;
+    transform: translateX(-50%);
+    background-attachment: fixed;
+    margin-top: 70px;
+}
+
+@media (max-width: 717px) {
+        .opcoes {
+            margin-top: 110px;
+        }
+}
+
+.Arquivos{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 80px 80px;
+    border: 1px rgb(102, 102, 102);
+    border-radius: 15px;
+    background-color: #f4f4f491;
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translate(-56%, 80%);
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    margin-top: 10px; /* Espaço acima do botão */
+    padding: 10px 20px;
+    background-color: #0064cf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #cccccc88;
+    border-radius: 20px;
+    position: fixed;
+    right: 85px; /* Mantém a posição fixa */
+}
+
+.custom-file-upload {
+    margin-right: 10px; /* Adiciona espaço à direita do botão "Procurar" */
+    padding: 10px 30px; /* Tamanho do botão "Procurar" */
+    background-color: #b1b1b1; /* Cor de fundo do botão "Procurar" */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #cccccc88;
+    border-radius: 20px;
+}
+
+.custom-file-upload:hover {
+    background-color: #ddd; /* Efeito de hover */
+}
+
+@media (max-width: 600px) {
+    button {
+        position: relative; /* Muda a posição para relativa em telas pequenas */
+        margin: 7px 0; /* Espaçamento vertical entre os botões */
+        right: -80%; /* Remove a posição fixa em telas pequenas */
+    }
+
+    .custom-file-upload {
+        margin-right: 0; /* Remove margem em telas pequenas */
+    }
+}
+
+.custom-file-upload {
+    margin-top: 10px;
+    padding: 10px 40px;
+    background-color: #b1b1b1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #cccccc88;
+    border-radius: 20px;
+    position: fixed;
+    left: 85px;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    background-attachment: fixed;
+}
+
+.custom-file-upload:hover {
+    background-color: #ddd;
+}
+
+input:hover {
+    background-color: #616161;
+}
+
+button:hover {
+    background-color: #00438b;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOSPHERA</title>
+    <link href="../css/Login.css" rel="stylesheet" type="text/css" />
+    <script src="../components/Login.js"></script>
+</head>
+<body>
+
+    <div class="page">
+        <div class="toggle-buttons">
+            <button id="showLogin" class="toggle-btn">Login</button>
+            <button id="showCadastro" class="toggle-btn">Cadastro</button>
+        </div>
+        
+        <form method="POST" class="formLogin" id="loginForm">
+            <h1>Login</h1>
+            <p>Digite os seus dados de acesso no campo abaixo.</p>
+            <label for="user">Usuário</label>
+            <input type="text" id="user" name="user" placeholder="Digite seu usuário" autofocus="true" required />
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required />
+            <a href="/">Esqueci minha senha</a>
+            <input type="submit" value="Acessar" class="btn login-btn" />
+        </form>
+        
+        <form method="POST" class="formCadastro" id="cadastroForm" style="display: none;">
+            <h1>Cadastro</h1>
+            <p>Crie sua conta preenchendo os dados abaixo.</p>
+            <label for="newUser">Usuário</label>
+            <input type="text" id="newUser" name="newUser" placeholder="Escolha um usuário" required />
+            <label for="newPassword">Senha</label>
+            <input type="password" id="newPassword" name="newPassword" placeholder="Escolha uma senha" required />
+            <label for="confirmPassword">Confirmar Senha</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirme sua senha" required />
+            <input type="submit" value="Cadastrar" class="btn cadastro-btn" />
+        </form>
+    </div>
+
+<script>
+    document.getElementById('showLogin').onclick = function() {
+        document.getElementById('loginForm').style.display = 'flex';
+        document.getElementById('cadastroForm').style.display = 'none';
+        this.classList.add('active');
+        document.getElementById('showCadastro').classList.remove('active');
+    };
+
+    document.getElementById('showCadastro').onclick = function() {
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('cadastroForm').style.display = 'flex';
+        this.classList.add('active');
+        document.getElementById('showLogin').classList.remove('active');
+    };
+</script>
+       
+</body>
+</html>

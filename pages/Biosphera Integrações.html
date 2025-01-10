@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biosphera Tecnologia Nuvem FCO-DOCS</title>
+    <link href="../css/Integrações.css" rel="stylesheet" type="text/css" />
+    <script src="../components/Integrações.js"></script>
+</head>
+<body class="ground">
+    <div class="titulo">
+    <h1>
+                             <center>TECNOLOGIA-BIOSPHERA-SAUDE<center>
+    
+  </h1>
+</div>
+ <h1></h1>
+<h2></h2> 
+
+<div id="categorias">               
+    <select class="opcoes" onchange="handleOptionChange(this)">
+        <option value="integraçoes">
+            Integrações
+        </option>
+        <option value="desenvolvedores">
+            Desenvolvedores
+        </option>
+        <option value="suporte">
+            Suporte
+        </option>
+        <option value="inicial">
+            Inicial
+        </option> 
+        <option value="informacoes">
+            Informações
+        </option>
+        <option value="downloads">
+            Downloads
+        </option>  
+    </select>
+    
+    <div class="ping-container">
+        <h2>Teste Ping</h2>
+        
+        <!-- Campo para o usuário inserir o IP -->
+        <input type="text" id="ipInput" placeholder="Digite o IP ou URL" />
+        
+        <button id="startBtn" onclick="startPing()">Iniciar Ping</button>
+        <button id="stopBtn" onclick="stopPing()" disabled>Parar Ping</button>
+        
+        <div id="output"></div>
+
+</body>
+
+</html>
